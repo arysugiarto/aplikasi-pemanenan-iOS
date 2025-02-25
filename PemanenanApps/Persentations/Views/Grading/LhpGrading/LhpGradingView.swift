@@ -22,10 +22,17 @@ struct LhpGradingView: View {
     @State private var species = ""
     @State private var showDeleteConfirmation = false
     @State private var selectedGradingToDelete: UUID?
+    @State private var selectedLaporans: Set<String> = []
+    
     
     let orderItems = ["0010/SOBI/FPO-KLP/LHP/EKS-I/2023", "0010/SOBI/FPO-KLP/LHP/EKS-I/2024"]
     let speciesItems = ["Jati", "Mahoni", "Sengon"]
     let locationItems = ["Kulon Progo", "Sragen", "Jogja"]
+    
+   
+    let laporanList = ["Laporan A", "Laporan B", "Laporan C", "Laporan D"]
+
+
     
     
     private func dates() {
@@ -63,8 +70,15 @@ struct LhpGradingView: View {
                 .font(.headline)
                 .foregroundColor(.black)
                 .padding(.horizontal, 16)
-            DropDownView(selectedItem: $selectedLaporan, items: locationItems)
-            
+            LaporanMultiSelectView(
+                           title: "Pilih Laporan Pemanenan",  // Pastikan title diisi saat digunakan
+                           laporanItems: laporanList,
+                           selectedLaporan: $selectedLaporans
+                       )
+
+
+//            Text("Laporan Terpilih: \(Array(selectedLaporans).joined(separator: ", "))")
+//                           .padding()
             
             Text("Tanggal")
                 .font(.headline)
@@ -243,6 +257,65 @@ struct LhpGradingView: View {
         }
     }
     
-    
+
+    struct LaporanMultiSelectView: View {
+        let title: String
+        let laporanItems: [String]
+        @Binding var selectedLaporan: Set<String>
+        @State private var isExpanded: Bool = false
+
+        var body: some View {
+            VStack(alignment: .leading) {
+                Button(action: {
+                    withAnimation { isExpanded.toggle() }
+                }) {
+                    HStack {
+                        Text(selectedLaporan.isEmpty ? title : Array(selectedLaporan).joined(separator: ", "))
+                            .foregroundColor(.black)
+                            .lineLimit(1)
+                            .truncationMode(.tail)
+                        Spacer()
+                        Image(systemName: "chevron.down")
+                            .foregroundColor(.black)
+                    }
+                    .padding()
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.gray, lineWidth: 1))
+                }
+
+                if isExpanded {
+                    VStack(alignment: .leading, spacing: 5) {
+                        ForEach(laporanItems, id: \.self) { item in
+                            Button(action: {
+                                if selectedLaporan.contains(item) {
+                                    selectedLaporan.remove(item)
+                                } else {
+                                    selectedLaporan.insert(item)
+                                }
+                            }) {
+                                HStack {
+                                    Text(item)
+                                        .foregroundColor(.black)
+                                    Spacer()
+                                    if selectedLaporan.contains(item) {
+                                        Image(systemName: "checkmark.circle.fill")
+                                            .foregroundColor(.blue)
+                                    }
+                                }
+                                .padding()
+                            }
+                        }
+                    }
+                    .background(Color.white)
+                    .cornerRadius(10)
+                    .shadow(radius: 3)
+                    .transition(.opacity)
+                }
+            }
+            .padding(.horizontal, 16)
+        }
+    }
+
     
 }

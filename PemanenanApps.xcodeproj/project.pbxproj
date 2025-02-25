@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F9C59ED2D661979004B053D /* PemanenanDatabase.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F9C59EB2D661979004B053D /* PemanenanDatabase.xcdatamodeld */; };
+		4FAF4B742D6D5E2B00DE3FC9 /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = 4FAF4B732D6D5E2B00DE3FC9 /* Swinject */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4F618F802D64B86400ECA7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F618F672D64B86200ECA7CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F618F6E2D64B86200ECA7CD;
+			remoteInfo = PemanenanApps;
+		};
+		4F618F8A2D64B86400ECA7CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4F618F672D64B86200ECA7CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4F618F6E2D64B86200ECA7CD;
+			remoteInfo = PemanenanApps;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F618F6F2D64B86200ECA7CD /* PemanenanApps.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PemanenanApps.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F618F7F2D64B86400ECA7CD /* PemanenanAppsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PemanenanAppsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F618F892D64B86400ECA7CD /* PemanenanAppsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PemanenanAppsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F9C59EC2D661979004B053D /* PemanenanDatabase.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PemanenanDatabase.xcdatamodel; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		4F618F712D64B86200ECA7CD /* PemanenanApps */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PemanenanApps;
+			sourceTree = "<group>";
+		};
+		4F618F822D64B86400ECA7CD /* PemanenanAppsTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PemanenanAppsTests;
+			sourceTree = "<group>";
+		};
+		4F618F8C2D64B86400ECA7CD /* PemanenanAppsUITests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = PemanenanAppsUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F618F6C2D64B86200ECA7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FAF4B742D6D5E2B00DE3FC9 /* Swinject in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F618F7C2D64B86400ECA7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F618F862D64B86400ECA7CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F618F662D64B86200ECA7CD = {
+			isa = PBXGroup;
+			children = (
+				4F9C59EB2D661979004B053D /* PemanenanDatabase.xcdatamodeld */,
+				4F618F712D64B86200ECA7CD /* PemanenanApps */,
+				4F618F822D64B86400ECA7CD /* PemanenanAppsTests */,
+				4F618F8C2D64B86400ECA7CD /* PemanenanAppsUITests */,
+				4F618F702D64B86200ECA7CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F618F702D64B86200ECA7CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F618F6F2D64B86200ECA7CD /* PemanenanApps.app */,
+				4F618F7F2D64B86400ECA7CD /* PemanenanAppsTests.xctest */,
+				4F618F892D64B86400ECA7CD /* PemanenanAppsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F618F6E2D64B86200ECA7CD /* PemanenanApps */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F618F932D64B86400ECA7CD /* Build configuration list for PBXNativeTarget "PemanenanApps" */;
+			buildPhases = (
+				4F618F6B2D64B86200ECA7CD /* Sources */,
+				4F618F6C2D64B86200ECA7CD /* Frameworks */,
+				4F618F6D2D64B86200ECA7CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				4F618F712D64B86200ECA7CD /* PemanenanApps */,
+			);
+			name = PemanenanApps;
+			packageProductDependencies = (
+				4FAF4B732D6D5E2B00DE3FC9 /* Swinject */,
+			);
+			productName = PemanenanApps;
+			productReference = 4F618F6F2D64B86200ECA7CD /* PemanenanApps.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4F618F7E2D64B86400ECA7CD /* PemanenanAppsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F618F962D64B86400ECA7CD /* Build configuration list for PBXNativeTarget "PemanenanAppsTests" */;
+			buildPhases = (
+				4F618F7B2D64B86400ECA7CD /* Sources */,
+				4F618F7C2D64B86400ECA7CD /* Frameworks */,
+				4F618F7D2D64B86400ECA7CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F618F812D64B86400ECA7CD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4F618F822D64B86400ECA7CD /* PemanenanAppsTests */,
+			);
+			name = PemanenanAppsTests;
+			packageProductDependencies = (
+			);
+			productName = PemanenanAppsTests;
+			productReference = 4F618F7F2D64B86400ECA7CD /* PemanenanAppsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4F618F882D64B86400ECA7CD /* PemanenanAppsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F618F992D64B86400ECA7CD /* Build configuration list for PBXNativeTarget "PemanenanAppsUITests" */;
+			buildPhases = (
+				4F618F852D64B86400ECA7CD /* Sources */,
+				4F618F862D64B86400ECA7CD /* Frameworks */,
+				4F618F872D64B86400ECA7CD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F618F8B2D64B86400ECA7CD /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				4F618F8C2D64B86400ECA7CD /* PemanenanAppsUITests */,
+			);
+			name = PemanenanAppsUITests;
+			packageProductDependencies = (
+			);
+			productName = PemanenanAppsUITests;
+			productReference = 4F618F892D64B86400ECA7CD /* PemanenanAppsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F618F672D64B86200ECA7CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					4F618F6E2D64B86200ECA7CD = {
+						CreatedOnToolsVersion = 16.2;
+					};
+					4F618F7E2D64B86400ECA7CD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4F618F6E2D64B86200ECA7CD;
+					};
+					4F618F882D64B86400ECA7CD = {
+						CreatedOnToolsVersion = 16.2;
+						TestTargetID = 4F618F6E2D64B86200ECA7CD;
+					};
+				};
+			};
+			buildConfigurationList = 4F618F6A2D64B86200ECA7CD /* Build configuration list for PBXProject "PemanenanApps" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F618F662D64B86200ECA7CD;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4FAF4B722D6D5E2B00DE3FC9 /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4F618F702D64B86200ECA7CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F618F6E2D64B86200ECA7CD /* PemanenanApps */,
+				4F618F7E2D64B86400ECA7CD /* PemanenanAppsTests */,
+				4F618F882D64B86400ECA7CD /* PemanenanAppsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F618F6D2D64B86200ECA7CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F618F7D2D64B86400ECA7CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F618F872D64B86400ECA7CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F618F6B2D64B86200ECA7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F9C59ED2D661979004B053D /* PemanenanDatabase.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F618F7B2D64B86400ECA7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4F618F852D64B86400ECA7CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4F618F812D64B86400ECA7CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F618F6E2D64B86200ECA7CD /* PemanenanApps */;
+			targetProxy = 4F618F802D64B86400ECA7CD /* PBXContainerItemProxy */;
+		};
+		4F618F8B2D64B86400ECA7CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4F618F6E2D64B86200ECA7CD /* PemanenanApps */;
+			targetProxy = 4F618F8A2D64B86400ECA7CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4F618F912D64B86400ECA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F618F922D64B86400ECA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F618F942D64B86400ECA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PemanenanApps/Preview Content\"";
+				DEVELOPMENT_TEAM = XXA3DR9S8L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sobi.PemanenanApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F618F952D64B86400ECA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"PemanenanApps/Preview Content\"";
+				DEVELOPMENT_TEAM = XXA3DR9S8L;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sobi.PemanenanApps;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4F618F972D64B86400ECA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XXA3DR9S8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sobi.PemanenanAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PemanenanApps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PemanenanApps";
+			};
+			name = Debug;
+		};
+		4F618F982D64B86400ECA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XXA3DR9S8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sobi.PemanenanAppsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PemanenanApps.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/PemanenanApps";
+			};
+			name = Release;
+		};
+		4F618F9A2D64B86400ECA7CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XXA3DR9S8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sobi.PemanenanAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PemanenanApps;
+			};
+			name = Debug;
+		};
+		4F618F9B2D64B86400ECA7CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XXA3DR9S8L;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Sobi.PemanenanAppsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = PemanenanApps;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F618F6A2D64B86200ECA7CD /* Build configuration list for PBXProject "PemanenanApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F618F912D64B86400ECA7CD /* Debug */,
+				4F618F922D64B86400ECA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F618F932D64B86400ECA7CD /* Build configuration list for PBXNativeTarget "PemanenanApps" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F618F942D64B86400ECA7CD /* Debug */,
+				4F618F952D64B86400ECA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F618F962D64B86400ECA7CD /* Build configuration list for PBXNativeTarget "PemanenanAppsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F618F972D64B86400ECA7CD /* Debug */,
+				4F618F982D64B86400ECA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F618F992D64B86400ECA7CD /* Build configuration list for PBXNativeTarget "PemanenanAppsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F618F9A2D64B86400ECA7CD /* Debug */,
+				4F618F9B2D64B86400ECA7CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4FAF4B722D6D5E2B00DE3FC9 /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4FAF4B732D6D5E2B00DE3FC9 /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4FAF4B722D6D5E2B00DE3FC9 /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4F9C59EB2D661979004B053D /* PemanenanDatabase.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F9C59EC2D661979004B053D /* PemanenanDatabase.xcdatamodel */,
+			);
+			currentVersion = 4F9C59EC2D661979004B053D /* PemanenanDatabase.xcdatamodel */;
+			path = PemanenanDatabase.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4F618F672D64B86200ECA7CD /* Project object */;
+}
